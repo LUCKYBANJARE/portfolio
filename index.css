@@ -32,7 +32,7 @@
     --body-color:hsl(0,0%,87%);
     --container-color:hsl(0,0%,83%);
 
-    --body-fonyt: 'Inter', sans-serif;
+    --body-font: 'Inter', sans-serif;
     --biggest-font-size:2.5rem;
     --h1-font-size:1.75rem;
     --h2-font-size:1.25rem;
@@ -267,15 +267,14 @@ img{
 }
 
 .home__image{
-    width: 250px;
+    width: 260px;
     
 }
 
 .home__img{
     position: relative;
     z-index:10;
-    left: 50%;
-    
+    left: 15%;
     
 }
 
@@ -284,8 +283,8 @@ img{
     height: 300px;
     background-color: var(--container-color);
     position: absolute;
-    bottom: 8rem;
-    right: 2rem;
+    bottom: 9rem;
+    left: 5rem;
     border:4px solid var(--black-color);
     z-index:5;
     transition: background-color .4s;
@@ -303,26 +302,26 @@ img{
     left:50%;
     bottom: 21%;
     height: 42px;
-    
+   
 }
 
 .home__line{
-    right:0.5rem;
+    right:-1rem;
     bottom: 12rem;
 }
 
 .home__perfil .geometric-box{
     top: 2.5rem;
-    left:7rem;
+    left:1rem;
     z-index: 10;
 }
 
 .home__social{
     height: max-content;
     position: absolute;
-    left:4rem;
+    left:-1rem;
     top: 0;
-    bottom: 2rem;
+    bottom: 4rem;
     margin: auto 0;
     display: grid;
     row-gap: 1rem;
@@ -558,14 +557,15 @@ img{
 }
 
 .about__image{
-    width: 350px;
-    margin-left: 1.5rem;
+    width: 300px;
+    margin-left:-2rem;
 }
 
 .about__img{
     position: relative;
     border: 4px solid var(--white-color);
     z-index: 1;
+    left: 10%;
 }
 
 .about__shadow,
@@ -576,7 +576,7 @@ img{
 
 .about__shadow{
     width: 200px;
-    height: 500px;
+    height: 450px;
     background-color: var(--body-color);
     top:-3rem;
     right: -1.5rem;
@@ -592,8 +592,8 @@ img{
 
 .about__line{
     filter: invert(1);
-    right:2.5rem;
-    bottom:10rem;
+    right:1rem;
+    bottom:8rem;
     width: 50px;
     transition: filter .4s;
 }
@@ -706,11 +706,14 @@ img{
 .projects{
     background-color: var(--container-color);
     transition: background-color .4s;
+    justify-content: center;
+    
 }
 
 .projects__container{
-    row-gap: 12rem;
+    row-gap: 10rem;
 }
+
 
 .projects__card{
     background-color: var(--body-color);
@@ -718,7 +721,8 @@ img{
     transition: background-color .4s;
     height: 350px;
     width: 350px;
-    margin-left: 3rem;
+    position: relative;
+    /* margin-left: -0.5rem; */
    
 }
 
@@ -1274,22 +1278,28 @@ body.dark-theme{
 
 /* For Breakpoints=============== */
 /* For small devices */
+
 @media screen and (max-width:340px){
     .container{
         margin-inline:5rem;
     }
 
     .home__image{
-        width: 180px;
+        width: 120px;
     }
+    
 
     .about__image{
-        width: 180px;
+        width: 150px;
     }
 
     .about__shadow{
         height: 330px;
         right: -2.5rem;
+    }
+    
+    .about__box{
+        right: 2rem;
     }
 
     .contact__data{
@@ -1300,11 +1310,77 @@ body.dark-theme{
     .contact__data .section__title-2{
         transform: translateX(0);
     }
+
+
     
     
 }
 
 /* For medium screen */
+
+@media screen and (min-width:340px) and (max-width:575px){
+    
+    .home__perfil{
+        justify-content: center;
+        margin-block: 2.5rem 4.5rem;
+    }
+
+    .home__image{
+        width: 280px;
+        margin-left:6rem;
+    }
+    .home__line{
+        right:2.5rem;
+    }
+    
+    .home__arrow{
+        left: 14rem;
+        bottom: 6rem;
+    }
+    .home__shadow{
+        left:12.5rem;
+        bottom: 8rem;
+    }
+
+
+   .home__social{
+        left: 3rem;
+        bottom: 4rem;
+    }
+
+    .home__perfil .geometric-box{
+        top: 1.5rem;
+        left: 8rem;
+    }
+    .about__container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .about__shadow{
+        top:-3rem;
+        right: 5rem;
+    }
+     
+    .about__perfil .geometric-box{
+        top:-1rem;
+        right:5rem;
+    }
+
+    .about__line{
+        right:12rem;
+        top:8rem;
+    }
+
+    .about__box{
+       right: 12rem;
+       bottom: 2.5rem;
+       height: 50px;
+       width: 50px;
+    }
+
+    
+}
 @media screen and (min-width:576px){
     .home__container,
     .about__container,
@@ -1319,11 +1395,11 @@ body.dark-theme{
         bottom: 9rem;
     }
     .home__arrow{
-        left: 15rem;
+        left: 12rem;
         bottom: 6.8rem;
     }
     .home__line{
-        right:-5.5rem;
+        right:-1rem;
     }
 
     .about
@@ -1391,6 +1467,22 @@ body.dark-theme{
         column-gap: 2rem;
         padding-block: 1rem 3rems;
     }
+
+    .about__box{
+        right: 2rem;
+    }
+    .about__line{
+        right: 1rem;
+    }
+
+    .about__perfil .geometric-box{
+        top: 1.5rem;
+        right: -3rem;
+    }
+
+    .about__shadow{
+        right: -2rem;
+    }
     
 }
 
@@ -1418,15 +1510,20 @@ body.dark-theme{
     }
     
     .about__line{
-        right:-2.4rem;
-        top:7rem;
+        right:1rem;
+        top:6rem;
     }
 
     .about__box{
-        right: -1.7rem;
+        right: 2rem;
         bottom: 3rem;
         height: 60px;
         width: 60px;
+    }
+
+    .about__perfil .geometric-box{
+        top: 1.5rem;
+        right: -2rem;
     }
     
 
@@ -1468,7 +1565,7 @@ body.dark-theme{
 
     .nav__list{
         flex-direction: row;
-        column-gap: 3rem;
+        column-gap: 2rem;
     }
 
     .nav__menu{
@@ -1535,7 +1632,7 @@ body.dark-theme{
         height: 350px;
         width: 300px;
         top: 2rem;
-        left: 4rem;
+        left: 5rem;
         border: 6px solid var(--black-color);
 
     }
@@ -1621,12 +1718,12 @@ body.dark-theme{
 
     .home__perfil .geometric-box{
         top:10rem;
-        left:8rem;
+        left:1rem;
     }
 
     .home__social{
         left: initial;
-        right: -6rem;
+        right: 1rem;
         bottom: 10rem;
     }
 
@@ -1678,14 +1775,14 @@ body.dark-theme{
 
     .about__line{
         width: 80px;
-        right: 2rem;
-        top: 11rem;
+        right: 3rem;
+        top: 10rem;
     }
 
     .about__box{
         height: 64px;
         width: 64px;
-        right: 3rem;
+        right: 4rem;
         bottom: 1.5rem;
         
     }
