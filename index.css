@@ -1288,7 +1288,9 @@ body.dark-theme{
         width: 120px;
     }
     
-
+    .home__shadow{
+        left: 4rem;
+    }
     .about__image{
         width: 150px;
     }
@@ -1327,30 +1329,28 @@ body.dark-theme{
 
     .home__image{
         width: 280px;
-        margin-left:6rem;
+        margin-left:3rem;
     }
-    .home__line{
-        right:2.5rem;
-    }
+    
     
     .home__arrow{
         left: 14rem;
-        bottom: 6rem;
+        bottom: 7rem;
     }
     .home__shadow{
-        left:12.5rem;
-        bottom: 8rem;
+        left:9rem;
+        bottom: 9rem;
     }
 
 
    .home__social{
-        left: 3rem;
+        left: 1rem;
         bottom: 4rem;
     }
 
     .home__perfil .geometric-box{
         top: 1.5rem;
-        left: 8rem;
+        left: 5rem;
     }
     .about__container{
         grid-template-columns: 1fr;
@@ -1359,21 +1359,21 @@ body.dark-theme{
 
     .about__shadow{
         top:-3rem;
-        right: 5rem;
+        right: 2rem;
     }
      
     .about__perfil .geometric-box{
         top:-1rem;
-        right:5rem;
+        right:3rem;
     }
 
     .about__line{
-        right:12rem;
+        right:5rem;
         top:8rem;
     }
 
     .about__box{
-       right: 12rem;
+       right: 5rem;
        bottom: 2.5rem;
        height: 50px;
        width: 50px;
