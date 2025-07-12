@@ -1328,29 +1328,29 @@ body.dark-theme{
     }
 
     .home__image{
-        width: 280px;
-        margin-left:3rem;
+        width: 250px;
+        margin-left:1rem;
     }
     
     
     .home__arrow{
-        left: 14rem;
+        left: 12rem;
         bottom: 7rem;
     }
     .home__shadow{
-        left:9rem;
+        left:5rem;
         bottom: 9rem;
     }
-
-
+    
+    
    .home__social{
-        left: 1rem;
+        left: -0.5rem;
         bottom: 4rem;
     }
 
     .home__perfil .geometric-box{
         top: 1.5rem;
-        left: 5rem;
+        left: 2rem;
     }
     .about__container{
         grid-template-columns: 1fr;
@@ -1359,21 +1359,21 @@ body.dark-theme{
 
     .about__shadow{
         top:-3rem;
-        right: 2rem;
+        right: -1rem;
     }
      
     .about__perfil .geometric-box{
-        top:-1rem;
-        right:3rem;
+        top:-2rem;
+        right:-1rem;
     }
 
     .about__line{
-        right:5rem;
+        right:1rem;
         top:8rem;
     }
 
     .about__box{
-       right: 5rem;
+       right: 1.6rem;
        bottom: 2.5rem;
        height: 50px;
        width: 50px;
